@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  font-size: $font-size-default;
+  font-family: $font-text-basic;
+  font-weight: 400;
+  color: $color-text-default;
+  background-color: $color-background-default;
+  position: relative;
+  cursor: default;
+}
+
+#app {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: inherit;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  user-select: none;
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
