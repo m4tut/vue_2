@@ -16,7 +16,8 @@
       "warn",
       2,
       {
-        "ignoredNodes": ["TemplateLiteral"]
+        "ignoredNodes": ["TemplateLiteral"],
+        "SwitchCase": 1
       }
     ],
     "vue/multi-word-component-names": [
