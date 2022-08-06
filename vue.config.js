@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path')
 
 module.exports = {
   assetsDir: '',
@@ -7,16 +7,16 @@ module.exports = {
   css: {
     loaderOptions: {
       scss: {
-        additionalData: `@import "@/assets/styles/helpers/vars.scss"; @import "@/assets/styles/helpers/functions.scss"; @import "@/assets/styles/helpers/mixins.scss";`,
-      },
-    },
+        additionalData: `@import "@/assets/styles/helpers/vars.scss"; @import "@/assets/styles/helpers/functions.scss"; @import "@/assets/styles/helpers/mixins.scss";`
+      }
+    }
   },
   configureWebpack: {
     resolve: {
       modules: [__dirname, 'node_modules'],
       alias: {
-        '@': path.resolve(__dirname, 'src/'),
-      },
-    },
-  },
-};
+        '@': path.resolve(__dirname, 'src/')
+      }
+    }
+  }
+}

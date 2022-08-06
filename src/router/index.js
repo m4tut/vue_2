@@ -1,7 +1,7 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
+import Vue from 'vue'
+import VueRouter from 'vue-router'
 
-Vue.use(VueRouter);
+Vue.use(VueRouter)
 
 const route = (path, name, redirect = false, beforeEnter) => {
   return {
@@ -9,13 +9,13 @@ const route = (path, name, redirect = false, beforeEnter) => {
     name,
     redirect,
     beforeEnter,
-    component: (resolve) => import(`@/pages/${name}.vue`).then(resolve),
-  };
-};
+    component: (resolve) => import(`@/pages/${name}.vue`).then(resolve)
+  }
+}
 
-const routes = [route('/', 'PageMain'), route('/:catchAll(.*)', 'Error404')];
+const routes = [route('/', 'PageMain'), route('/:catchAll(.*)', 'Error404')]
 
 export default new VueRouter({
   mode: 'history',
-  routes,
-});
+  routes
+})

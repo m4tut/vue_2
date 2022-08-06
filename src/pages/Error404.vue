@@ -1,14 +1,21 @@
 <template>
   <main class="main">
-    <h1 class="title">Error 404</h1>
-    <router-link class="link" to="/">Go to Home</router-link>
+    <h1 class="title">
+      Error 404
+    </h1>
+    <router-link
+      class="link"
+      to="/"
+    >
+      Go to Home
+    </router-link>
   </main>
 </template>
 
 <script>
 export default {
-  name: 'Error404',
-};
+  name: 'Error404'
+}
 </script>
 
 <style lang="scss" scoped>

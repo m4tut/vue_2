@@ -25,6 +25,6 @@ module.exports = {
     'type-empty': [2, 'never'],
 
     // Перечислим все возможные варианты коммитов
-    'type-enum': [2, 'always', ['build', 'ci', 'docs', 'feat', 'fix', 'perf', 'refactor', 'revert', 'style', 'test']],
-  },
-};
+    'type-enum': [2, 'always', ['build', 'ci', 'docs', 'feat', 'fix', 'perf', 'refactor', 'revert', 'style', 'test']]
+  }
+}

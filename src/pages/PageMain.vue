@@ -4,8 +4,8 @@
 
 <script>
 export default {
-  name: 'PageMain',
-};
+  name: 'PageMain'
+}
 </script>
 
 <style lang="scss" scoped>
