@@ -112,7 +112,7 @@ module.exports = {
     'semi': [2, 'never'],
     'semi-spacing': [2, { 'before': false, 'after': true }],
     'space-before-blocks': [2, 'always'],
-    'space-before-function-paren': [2, 'never'],
+    'space-before-function-paren': [2, { 'anonymous': 'never', 'named': 'never', 'asyncArrow': 'always' }],
     'space-in-parens': [2, 'never'],
     'space-infix-ops': 2,
     'space-unary-ops': [2, { 'words': true, 'nonwords': false }],
@@ -131,7 +131,7 @@ module.exports = {
     'vue/jsx-uses-vars': 2,
     'vue/multi-word-component-names': [2, { 'ignores': ['Error404'] }],
     'vue/max-attributes-per-line': [2, { singleline: { max: 3 }, multiline: { max: 1 }}],
-    'vue/html-self-closing': [2, { html: { void: 'always', normal: 'never' }, svg: 'always', math: 'always' }],
+    'vue/html-self-closing': [2, { html: { void: 'always', normal: 'always', component: 'always' }, svg: 'always', math: 'always' }],
     'vue/singleline-html-element-content-newline': 0,
     'prettier/prettier': 0
   }
